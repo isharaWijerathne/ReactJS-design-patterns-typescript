@@ -14,9 +14,9 @@ function Header() {
             <p  className="text-white text-center font-bold text-[14px]">HOC</p>
           </Link>
 
-          <li className="flex items-center justify-center h-12 w-48 bg-teal-500 hover:bg-teal-300 rounded-xl ">
+          <Link to="/compound-component" className="flex items-center justify-center h-12 w-48 bg-teal-500 hover:bg-teal-300 rounded-xl ">
             <p className="text-white text-center font-bold text-[14px]">Compount Component</p>
-          </li>
+          </Link>
 
           <li className="flex items-center justify-center h-12 w-48 bg-teal-500 hover:bg-teal-300 rounded-xl ">
             <p className="text-white text-center font-bold text-[14px]">Custom Hooks</p>
