@@ -6,6 +6,12 @@ import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router';
 import Layout from './components/Layout.tsx';
 import ContainerPresentaion from './pages/ContainerPresentaion.tsx';
+import HigherOrderComponents from './pages/HigherOrderComponents.tsx';
+import LogInHoc from './components/HOC/LogInHoc.tsx';
+import ProfileHoc from './components/HOC/ProfileHoc.tsx';
+import UserSetting from './components/HOC/UserSetting.tsx';
+
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,6 +20,11 @@ createRoot(document.getElementById('root')!).render(
         <Route path='/'  element={<Layout />} >
           <Route index element={<App/>} />
           <Route path='/container-presentaion' element={<ContainerPresentaion />} />
+          <Route path='/higher-order-components'  element={<HigherOrderComponents />} >
+            <Route path="/higher-order-components/log" index element={<LogInHoc />} />
+            <Route path="/higher-order-components/profile" index element={<ProfileHoc />} />
+            <Route path="/higher-order-components/user-setting" index element={<UserSetting />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>

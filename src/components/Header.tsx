@@ -6,13 +6,13 @@ function Header() {
     <>
     <div className="w-full h-16 bg-blue-500">
         <ul className="flex h-16 items-center justify-center gap-1">
-          <li className="flex items-center justify-center h-12 w-48 bg-teal-500 hover:bg-teal-300 rounded-xl ">
-            <Link to="/container-presentaion" className="text-white text-center font-bold text-[14px]">Container Presentaion Pattren</Link>
-          </li>
+          <Link to="/container-presentaion" className="flex items-center justify-center h-12 w-48 bg-teal-500 hover:bg-teal-300 rounded-xl ">
+            <p className="text-white text-center font-bold text-[14px]">Container Presentaion Pattren</p>
+          </Link>
 
-          <li className="flex items-center justify-center h-12 w-48 bg-teal-500 hover:bg-teal-300 rounded-xl ">
-            <p className="text-white text-center font-bold text-[14px]">HOC</p>
-          </li>
+          <Link to="/higher-order-components" className="flex items-center justify-center h-12 w-48 bg-teal-500 hover:bg-teal-300 rounded-xl ">
+            <p  className="text-white text-center font-bold text-[14px]">HOC</p>
+          </Link>
 
           <li className="flex items-center justify-center h-12 w-48 bg-teal-500 hover:bg-teal-300 rounded-xl ">
             <p className="text-white text-center font-bold text-[14px]">Compount Component</p>
